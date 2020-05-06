@@ -1,13 +1,14 @@
 import pytest
 import allure
 
-#1、title
+
+# 1、title
 
 @allure.feature("这里是一级标签：feature")
 class Test_Fixture:
-    #1、创建step步骤方法
-    #2、增加allure step
-    #3、用例来调用step方法
+    # 1、创建step步骤方法
+    # 2、增加allure step
+    # 3、用例来调用step方法
     @allure.step("步骤1")
     def step_1(self):
         print("这是步骤1")
@@ -39,23 +40,25 @@ class Test_Fixture:
         self.step_3()
         assert 0
 
-
-    #1、新建方法
+    # 1、新建方法
     name_password_list = [("xiaoming", "123123"), ("xiaohong", "456456")]
+
     @pytest.mark.parametrize(("name", "password"), name_password_list)
-    def case_dynamic(self,name,password):
+    def case_dynamic(self, name, password):
         print(name)
         print(password)
         allure.dynamic.title(name)
         self.step_4()
-    #2、定义参数化
-    #3、allure动态生成title
+
+    # 2、定义参数化
+    # 3、allure动态生成title
 
     def step_4(self):
         with allure.step("第1步："):
             pass
         with allure.step("第2步："):
             pass
+
 
 if __name__ == '__main__':
     pytest.main(["-s", "test_class.py", "--html=移动端自动化测试报告.html"])
