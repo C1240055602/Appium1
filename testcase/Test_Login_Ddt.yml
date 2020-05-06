@@ -1,0 +1,14 @@
+
+"test_login_1":
+  username: "13331"
+  code: "131"
+  step:
+    - 点击允许
+    - 点击我的
+    - 输入用户名
+    - 输入验证码
+    - 点击登录
+"test_login_2":
+  username: "@#$%^&*()"
+  code: "abcdef"
+

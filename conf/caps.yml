@@ -1,0 +1,16 @@
+# 3、platformName
+platformName: 'Android'
+# 4、platformVersion
+platformVersion: '5.1'
+# 5、deviceName
+deviceName: 'Samsung_Galaxy_S6'
+# 6、启动程序的包名appPackage
+appPackage: 'com.boxuegu'
+# 7、启动界面名appActivity
+appActivity: 'com.boxuegu.activity.MainFlutterActivity'
+# 解决中文
+unicodeKeyboard: True
+resetKeyboard: True
+
+# 获取toast automationName = uiautomator2
+automationName: 'uiautomator2'

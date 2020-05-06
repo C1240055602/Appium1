@@ -1,0 +1,30 @@
+...F
+======================================================================
+FAIL: test_num_02 (unittest_test.TestNum.Test)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\cjj\PycharmProjects\Appium1\unittest_test\TestNum.py", line 23, in test_num_02
+    self.assertNotIn("h", "hello")  # Ê§°Ü
+AssertionError: 'h' unexpectedly found in 'hello'
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.001s
+
+FAILED (failures=1)
+test_add_01 (unittest_test.TestMath.Test) ... ok
+test_add_02 (unittest_test.TestMath.Test) ... ok
+test_num_01 (unittest_test.TestNum.Test) ... ok
+test_num_02 (unittest_test.TestNum.Test) ... FAIL
+
+======================================================================
+FAIL: test_num_02 (unittest_test.TestNum.Test)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\cjj\PycharmProjects\Appium1\unittest_test\TestNum.py", line 23, in test_num_02
+    self.assertNotIn("h", "hello")  # Ê§°Ü
+AssertionError: 'h' unexpectedly found in 'hello'
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.004s
+
+FAILED (failures=1)

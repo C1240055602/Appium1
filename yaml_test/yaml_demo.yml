@@ -1,0 +1,54 @@
+# encoding:utf8
+# 字典
+# name: "rest_yaml"
+# result: "success"
+
+#列表
+#- "a"
+#- "b"
+#- "c"
+
+#字典嵌套字典
+#需求:{person1:{"name":"xiaoming","age":"18"},person2:{"name":"xiaohong","age":"20"}
+#      }
+#person1:
+#  name: "xiaoming"
+#  age: "18"
+#person2:
+#  name: "xiaohong"
+#  age: "20"
+
+#字典嵌套列表
+#需求： {person:["xiaoming","18"]}
+#person
+# -
+#person:
+#  - xiaoming
+#  - 18
+
+#列表嵌套字典
+#需求：[{"username":"test1"},{"password":"123456","password1":"1","password2":"2"}]
+#- username: "test1"
+#- password: "123456"
+#  password1: "1"
+#  password2: "2"
+
+#列表嵌套列表(同级别要对齐)
+#需求：[{"a","b","c"},{"1","2","3"}]
+#-
+#  - "a"
+#  - "b"
+#  - "c"
+#-
+#  - "1"
+#  - "2"
+#  - "3"
+
+#读取多个yaml文档
+---
+"用户名称1": "test123"
+"密码": "123456"
+
+---
+"用户名称2": "test456"
+"密码2": "456789"
